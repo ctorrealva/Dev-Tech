@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  IdParametro: 1
+  Placa: MyText
+  FechaVenceSoat: 2015-11-28
+  FechaVenceRevTec: 2015-11-28
+
+two:
+  IdParametro: 1
+  Placa: MyText
+  FechaVenceSoat: 2015-11-28
+  FechaVenceRevTec: 2015-11-28

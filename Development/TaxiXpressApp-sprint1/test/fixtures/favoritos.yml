@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  IdFavorito: 1
+  cliente_id: 
+  Nombres: MyString
+  Origen: MyString
+  Destino: MyString
+
+two:
+  IdFavorito: 1
+  cliente_id: 
+  Nombres: MyString
+  Origen: MyString
+  Destino: MyString

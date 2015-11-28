@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  IdServicio: 1
+  cliente_id: 
+  conductor_id: 
+  vehiculo_id: 
+  tipopago_id: 
+  Origen: MyString
+  Destino: MyString
+  FechaHora: 2015-11-28 01:26:03
+  estadoservicio_id: 
+  Puntaje: 1
+  Comentario: MyText
+  Monto: 9.99
+
+two:
+  IdServicio: 1
+  cliente_id: 
+  conductor_id: 
+  vehiculo_id: 
+  tipopago_id: 
+  Origen: MyString
+  Destino: MyString
+  FechaHora: 2015-11-28 01:26:03
+  estadoservicio_id: 
+  Puntaje: 1
+  Comentario: MyText
+  Monto: 9.99

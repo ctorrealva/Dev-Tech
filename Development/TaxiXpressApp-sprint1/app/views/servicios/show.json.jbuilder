@@ -1,0 +1,1 @@
+json.extract! @servicio, :id, :IdServicio, :cliente_id, :conductor_id, :vehiculo_id, :tipopago_id, :Origen, :Destino, :FechaHora, :estadoservicio_id, :Puntaje, :Comentario, :Monto, :created_at, :updated_at

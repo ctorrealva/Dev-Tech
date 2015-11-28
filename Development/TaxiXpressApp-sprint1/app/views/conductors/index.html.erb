@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Conductors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Licencia</th>
+      <th>User</th>
+      <th>Nombres</th>
+      <th>Apellidopaterno</th>
+      <th>Apellidomaterno</th>
+      <th>Clase</th>
+      <th>Categoria</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @conductors.each do |conductor| %>
+      <tr>
+        <td><%= conductor.Licencia %></td>
+        <td><%= conductor.user %></td>
+        <td><%= conductor.Nombres %></td>
+        <td><%= conductor.ApellidoPaterno %></td>
+        <td><%= conductor.ApellidoMaterno %></td>
+        <td><%= conductor.Clase %></td>
+        <td><%= conductor.Categoria %></td>
+        <td><%= link_to 'Show', conductor %></td>
+        <td><%= link_to 'Edit', edit_conductor_path(conductor) %></td>
+        <td><%= link_to 'Destroy', conductor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Conductor', new_conductor_path %>

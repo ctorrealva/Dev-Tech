@@ -1,0 +1,45 @@
+<%= form_for(@conductor) do |f| %>
+  <% if @conductor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@conductor.errors.count, "error") %> prohibited this conductor from being saved:</h2>
+
+      <ul>
+      <% @conductor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Licencia %><br>
+    <%= f.text_field :Licencia %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Nombres %><br>
+    <%= f.text_field :Nombres %>
+  </div>
+  <div class="field">
+    <%= f.label :ApellidoPaterno %><br>
+    <%= f.text_field :ApellidoPaterno %>
+  </div>
+  <div class="field">
+    <%= f.label :ApellidoMaterno %><br>
+    <%= f.text_field :ApellidoMaterno %>
+  </div>
+  <div class="field">
+    <%= f.label :Clase %><br>
+    <%= f.text_field :Clase %>
+  </div>
+  <div class="field">
+    <%= f.label :Categoria %><br>
+    <%= f.text_field :Categoria %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
