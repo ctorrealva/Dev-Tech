@@ -11,7 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20151128023312) do
 
   create_table "estado_servicios", force: :cascade do |t|
@@ -30,25 +29,6 @@ ActiveRecord::Schema.define(version: 20151128023312) do
     t.datetime "updated_at",                     null: false
   end
 
-  create_table "tipo_pagos", force: :cascade do |t|
-    t.string   "CodigoTipoPago", limit: 255
-    t.text     "Descripcion",    limit: 65535
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
-  end
-
-  create_table "vehiculos", force: :cascade do |t|
-    t.integer  "IdVehiculo",       limit: 4
-    t.text     "Placa",            limit: 65535
-    t.date     "FechaVenceSoat"
-    t.date     "FechaVenceRevTec"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-  end
-
-=======
-ActiveRecord::Schema.define(version: 20151128015205) do
-
   create_table "profiles", force: :cascade do |t|
     t.string   "first_name", limit: 255
     t.string   "last_name",  limit: 255
@@ -59,6 +39,13 @@ ActiveRecord::Schema.define(version: 20151128015205) do
   end
 
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
+
+  create_table "tipo_pagos", force: :cascade do |t|
+    t.string   "CodigoTipoPago", limit: 255
+    t.text     "Descripcion",    limit: 65535
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -79,6 +66,14 @@ ActiveRecord::Schema.define(version: 20151128015205) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "vehiculos", force: :cascade do |t|
+    t.integer  "IdVehiculo",       limit: 4
+    t.text     "Placa",            limit: 65535
+    t.date     "FechaVenceSoat"
+    t.date     "FechaVenceRevTec"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
   add_foreign_key "profiles", "users"
->>>>>>> 5fad6ee67f95b11b682099714f5e6ccb3e62bbc3
 end

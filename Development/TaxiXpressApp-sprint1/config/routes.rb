@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   resources :estado_servicios
   resources :parametros
   resources :vehiculos
@@ -10,7 +9,6 @@ Rails.application.routes.draw do
   resources :clientes
   resources :conductors
   resources :administradors
-  resources :users
   resources :estado_servicios
   resources :parametros
   resources :vehiculos
@@ -20,12 +18,10 @@ Rails.application.routes.draw do
   resources :clientes
   resources :conductors
   resources :administradors
-  resources :users
   resources :estado_servicios
   resources :parametros
   resources :vehiculos
   resources :tipo_pagos
-=======
   resources :profiles, only: [:edit, :update]
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
@@ -51,7 +47,6 @@ Rails.application.routes.draw do
 
   get 'pages/parametro'
 
->>>>>>> 5fad6ee67f95b11b682099714f5e6ccb3e62bbc3
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

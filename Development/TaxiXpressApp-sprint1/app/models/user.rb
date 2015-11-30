@@ -1,6 +1,5 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
-=======
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -36,5 +35,4 @@ def friendly_name
 end
 
 
->>>>>>> 5fad6ee67f95b11b682099714f5e6ccb3e62bbc3
 end
