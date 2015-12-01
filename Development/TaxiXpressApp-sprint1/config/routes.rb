@@ -4,43 +4,10 @@ Rails.application.routes.draw do
   resources :clients
   resources :administrators
   resources :drivers
-  resources :administrators
   resources :service_states
   resources :parameters
   resources :vehicles
   resources :payment_types
-  resources :administradors
-  resources :administradors
-  resources :estado_servicios
-  resources :parametros
-  resources :vehiculos
-  resources :tipo_pagos
-  resources :servicios
-  resources :favoritos
-  resources :clientes
-  resources :conductors
-  resources :administradors
-  resources :estado_servicios
-  resources :parametros
-  resources :vehiculos
-  resources :tipo_pagos
-  resources :tipo_pagos
-  resources :servicios
-  resources :favoritos
-  resources :clientes
-  resources :conductors
-  resources :administradors
-  resources :estado_servicios
-  resources :parametros
-  resources :vehiculos
-  resources :tipo_pagos
-  resources :servicios
-  resources :favoritos
-  resources :favoritos
-  resources :tipo_pagos
-  resources :administradors
-  resources :users
-  resources :users
   resources :profiles, only: [:edit, :update]
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
