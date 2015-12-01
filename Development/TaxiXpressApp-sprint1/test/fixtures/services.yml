@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client_id: 
+  driver_id: 
+  vehicle_id: 
+  payment_type_id: 
+  source: MyString
+  destination: MyString
+  date_hour: 2015-12-01 01:50:46
+  service_state_id: 
+  score: 1
+  comment: MyText
+  amount: 9.99
+
+two:
+  client_id: 
+  driver_id: 
+  vehicle_id: 
+  payment_type_id: 
+  source: MyString
+  destination: MyString
+  date_hour: 2015-12-01 01:50:46
+  service_state_id: 
+  score: 1
+  comment: MyText
+  amount: 9.99

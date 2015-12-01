@@ -1,0 +1,21 @@
+<%= simple_form_for(@service) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :client %>
+    <%= f.association :driver %>
+    <%= f.association :vehicle %>
+    <%= f.association :payment_type %>
+    <%= f.input :source %>
+    <%= f.input :destination %>
+    <%= f.input :date_hour %>
+    <%= f.association :service_state %>
+    <%= f.input :score %>
+    <%= f.input :comment %>
+    <%= f.input :amount %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

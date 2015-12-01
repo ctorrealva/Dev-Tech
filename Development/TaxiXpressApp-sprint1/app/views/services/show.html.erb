@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @service.client %>
+</p>
+
+<p>
+  <strong>Driver:</strong>
+  <%= @service.driver %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @service.vehicle %>
+</p>
+
+<p>
+  <strong>Payment type:</strong>
+  <%= @service.payment_type %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @service.source %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @service.destination %>
+</p>
+
+<p>
+  <strong>Date hour:</strong>
+  <%= @service.date_hour %>
+</p>
+
+<p>
+  <strong>Service state:</strong>
+  <%= @service.service_state %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @service.score %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @service.comment %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @service.amount %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

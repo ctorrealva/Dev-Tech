@@ -1,12 +1,14 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
-=======
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
 has_one :profile
+has_many :Conductor
+has_many :Administrador
+has_many :Cliente
 
 enum role: [:user, :operator, :chef, :admin]
 after_initialize :set_default_role
@@ -36,5 +38,4 @@ def friendly_name
 end
 
 
->>>>>>> 5fad6ee67f95b11b682099714f5e6ccb3e62bbc3
 end

@@ -1,0 +1,12 @@
+<%= simple_form_for @vehicle, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :plaque %>
+  <%= error_span(@vehicle[:plaque]) %>
+  <%= f.input :soat_due_date %>
+  <%= error_span(@vehicle[:soat_due_date]) %>
+  <%= f.input :technical_review_due_date %>
+  <%= error_span(@vehicle[:technical_review_due_date]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                vehicles_path, :class => 'btn btn-default' %>
+<% end %>

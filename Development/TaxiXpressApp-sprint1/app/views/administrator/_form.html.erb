@@ -1,0 +1,14 @@
+<%= simple_form_for @administrator, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :id_number %>
+  <%= error_span(@administrator[:id_number]) %>
+  <%= f.input :user_id %>
+  <%= error_span(@administrator[:user_id]) %>
+  <%= f.input :first_name %>
+  <%= error_span(@administrator[:first_name]) %>
+  <%= f.input :last_name %>
+  <%= error_span(@administrator[:last_name]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                administrators_path, :class => 'btn btn-default' %>
+<% end %>
