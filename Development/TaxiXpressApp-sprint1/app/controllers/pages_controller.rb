@@ -3,33 +3,15 @@ class PagesController < ApplicationController
   def index
   end
 
-  def nosotros
+  def about_us
   end
 
-  def login
+  def faq
   end
 
-  def historial
+  def tos
   end
 
-  def pedirtaxi
-  end
-
-  def favorito
-  end
-
-  def score
-  end
-
-  def calificar
-  end
-
-  def vehiculo
-  end
-
-  def conductor
-  end
-
-  def parametro
+  def contact_us
   end
 end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plaque:</strong>
+  <%= @vehicle.plaque %>
+</p>
+
+<p>
+  <strong>Soat due date:</strong>
+  <%= @vehicle.soat_due_date %>
+</p>
+
+<p>
+  <strong>Technical review due date:</strong>
+  <%= @vehicle.technical_review_due_date %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

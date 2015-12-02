@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plaque: MyString
+  soat_due_date: 2015-12-01
+  technical_review_due_date: 2015-12-01
+
+two:
+  plaque: MyString
+  soat_due_date: 2015-12-01
+  technical_review_due_date: 2015-12-01
