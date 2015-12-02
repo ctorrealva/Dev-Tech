@@ -6,11 +6,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          
 has_one :profile
-has_many :Conductor
-has_many :Administrador
-has_many :Cliente
 
-enum role: [:user, :operator, :chef, :admin]
+
+enum role: [:client, :driver, :administrator]
 after_initialize :set_default_role
 def set_default_role
   self.role ||= :user
