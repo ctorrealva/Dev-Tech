@@ -10,11 +10,94 @@
 
 <% end %>
 
-<p>Opened in 1999, Restaurant Wok & Wine is a casual fine dining restaurant, offering eclectic American cuisine and warm 
-hospitality in a rustic historically preserved building. A high, open beam ceiling, exposed brick and concrete floors display 
-the original space, while an open kitchen, banquette seating and gentle lighting contribute to an intimate and contemporary feel.</p>
 
-<h2>What you can expect from us</h2>
+<h2>Completa los datos para solicitar un taxi!</h2>
 
-<p>Find me in app/views/pages/tos.html.erb</p>
+<p>!!!!!!!!!!!!!!!!!!!</p>
 
+<body>
+
+  <div class="form-group form-group-sm">
+    <label class="col-sm-1 control-label" for="formGroupInputSmall">Origen</label>
+    <div class="col-sm-2">
+      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+    </div>
+    <label class="col-sm-1 control-label" for="formGroupInputSmall">Destino</label>
+    <div class="col-sm-2">
+      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+    </div>
+    
+    
+   
+    
+                <div class='col-sm-3 input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+     
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+
+
+
+
+
+    
+    <div class="dropdown pull-right">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Acción
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+  </div>
+
+
+<div class="container">
+  <h2>Historial de Servicios</h2>
+  <p>Visualiza los servicios registrados</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Conductor</th>
+        <th>Vehiculo</th>
+        <th>TipoPago</th>
+        <th>Origen</th>
+        <th>Destino</th>
+        <th>Fecha/Hora</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
