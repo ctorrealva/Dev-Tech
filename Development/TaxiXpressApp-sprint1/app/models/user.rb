@@ -11,7 +11,8 @@ has_one :profile
 enum role: [:client, :driver, :administrator]
 after_initialize :set_default_role
 def set_default_role
-  self.role ||= :user
+  self.role ||= :client
+  
 end
 
 def default_profile

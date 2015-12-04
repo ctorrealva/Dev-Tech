@@ -20,11 +20,11 @@
   <div class="form-group form-group-sm">
     <label class="col-sm-1 control-label" for="formGroupInputSmall">Origen</label>
     <div class="col-sm-2">
-      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Distrito">
     </div>
     <label class="col-sm-1 control-label" for="formGroupInputSmall">Destino</label>
     <div class="col-sm-2">
-      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Distrito">
     </div>
     
     
@@ -54,11 +54,11 @@
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Reservar</a></li>
+    <li><a href="#">Solicitar</a></li>
+    <li><a href="#">Guardar</a></li>
     <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+    <li><a href="#">Eliminar</a></li>
   </ul>
 </div>
   </div>
@@ -66,7 +66,8 @@
 
 <div class="container">
   <h2>Historial de Servicios</h2>
-  <p>Visualiza los servicios registrados</p>            
+  <p>Visualiza los servicios registrados</p>
+  <%- model_class = Service -%>
   <table class="table table-hover">
     <thead>
       <tr>

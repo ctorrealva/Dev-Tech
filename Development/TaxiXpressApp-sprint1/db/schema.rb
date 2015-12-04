@@ -49,6 +49,13 @@ ActiveRecord::Schema.define(version: 20151201015046) do
 
   add_index "drivers", ["user_id"], name: "index_drivers_on_user_id", using: :btree
 
+  create_table "estado_servicios", force: :cascade do |t|
+    t.integer  "IdEstadoServicio", limit: 4
+    t.text     "Descripcion",      limit: 65535
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
   create_table "favorites", force: :cascade do |t|
     t.string   "name",        limit: 255
     t.integer  "client_id",   limit: 4
@@ -65,6 +72,15 @@ ActiveRecord::Schema.define(version: 20151201015046) do
     t.string   "value",       limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+  end
+
+  create_table "parametros", force: :cascade do |t|
+    t.integer  "IdParametro",      limit: 4
+    t.text     "Placa",            limit: 65535
+    t.date     "FechaVenceSoat"
+    t.date     "FechaVenceRevTec"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
   create_table "payment_types", force: :cascade do |t|
@@ -112,6 +128,13 @@ ActiveRecord::Schema.define(version: 20151201015046) do
   add_index "services", ["service_state_id"], name: "index_services_on_service_state_id", using: :btree
   add_index "services", ["vehicle_id"], name: "index_services_on_vehicle_id", using: :btree
 
+  create_table "tipo_pagos", force: :cascade do |t|
+    t.string   "CodigoTipoPago", limit: 255
+    t.text     "Descripcion",    limit: 65535
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
     t.string   "encrypted_password",     limit: 255, default: "", null: false
@@ -137,6 +160,15 @@ ActiveRecord::Schema.define(version: 20151201015046) do
     t.date     "technical_review_due_date"
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
+  end
+
+  create_table "vehiculos", force: :cascade do |t|
+    t.integer  "IdVehiculo",       limit: 4
+    t.text     "Placa",            limit: 65535
+    t.date     "FechaVenceSoat"
+    t.date     "FechaVenceRevTec"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
   add_foreign_key "administrators", "users"
